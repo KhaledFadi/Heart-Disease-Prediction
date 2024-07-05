@@ -1,83 +1,47 @@
-# Heart Disease Prediction Project
-
-## Overview
-This project involves analyzing and predicting heart disease using various machine learning algorithms. The project includes data cleaning, preprocessing, visualization, and model training to predict the presence of heart disease.
+# Heart Disease Prediction
+This repository contains a project aimed at predicting heart disease using machine learning techniques. The project involves data preprocessing, model training, and evaluation to determine the accuracy of the predictions.
 
 ## Table of Contents
+- [Introduction](#introduction)
 - [Installation](#installation)
 - [Data Description](#data-description)
-- [Data Cleaning](#data-cleaning)
-- [Data Preprocessing](#data-preprocessing)
-- [Data Visualization](#data-visualization)
-- [Model Training and Evaluation](#model-training-and-evaluation)
+- [Model-Training](#model-training)
 - [Results](#results)
 - [License](#license)
+  
+## Introduction
+Heart disease is a major health concern worldwide, and early detection can significantly improve treatment outcomes. This project leverages machine learning to predict the presence of heart disease in patients based on various health metrics.
 
 ## Installation
-To run this project, you need to have Python and the following libraries installed:
+To run this project locally, you need to have Python and the following libraries installed:
 
-- pandas
 - numpy
+- pandas
+- scikit-learn
 - matplotlib
 - seaborn
-- scikit-learn
-- xgboost
 
 You can install the required packages using the following command:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+pip install numpy pandas scikit-learn matplotlib seaborn
 ```
 ## Data Description
 The dataset used in this project is a CSV file containing medical information related to heart disease. The dataset includes features such as age, sex, chest pain type, resting blood pressure, serum cholesterol, fasting blood sugar, resting electrocardiographic results, maximum heart rate achieved, exercise-induced angina, ST depression induced by exercise, slope of the peak exercise ST segment, number of major vessels colored by fluoroscopy, and a target variable indicating the presence of heart disease.
 
-## Data Cleaning
-- Handling Missing Values: Removing rows with null values.
+## Model Training
+The model training process involves the following steps:
 
-- Duplicate Records: Identifying and removing duplicate records.
-## Data Preprocessing
-1-Viewing Data: Displaying the first and last 10 rows of the dataset.
+1-Data Preprocessing: Cleaning the data, handling missing values, and encoding categorical variables.
 
-2-Descriptive Statistics: Calculating statistical measures for the dataset.
+2-Feature Selection: Selecting the most relevant features for the model.
 
-3-Grouping and Filtering: Grouping data by various attributes and calculating relevant statistics.
+3-Splitting the Data: Dividing the dataset into training and testing sets.
 
-4-Scaling: Normalizing the feature columns using MinMaxScaler.
+4-Model Selection: Choosing the machine learning algorithm. In this case, we used Logistic Regression.
 
-## Data Visualization
-1-Histograms: Plotting histograms to show the distribution of key features.
+5-Training the Model: Fitting the model to the training data.
 
-2-Scatter Plots: Visualizing the relationship between different features and the target variable.
-## Model Training and Evaluation
-The following machine learning models are trained and evaluated:
-
-1-K-Nearest Neighbors (KNN):
-
-- Defining the model and training on the dataset.
-  
-- Evaluating the model using accuracy score and confusion matrix.
-  
-2-Naive Bayes:
-  
-- Defining the Gaussian Naive Bayes model.
-  
-- Training and evaluating the model using accuracy score and confusion matrix.
-  
-3-Support Vector Machine (SVM):
-- Defining the SVM model with a linear kernel.
-  
-- Training and evaluating the model using accuracy score and confusion matrix.
-  
-4-Random Forest:
-- Defining the Random Forest model.
-  
-- Training and evaluating the model using accuracy score and confusion matrix.
-  
-5-XGBoost:
-- Defining the XGBoost model.
-  
-- Training and evaluating the model using accuracy score and confusion matrix.
-  
 ## Results
 The results of the models' performance are compared, and the accuracy of each model is reported. The confusion matrix is used to visualize the classification results.
 ## License
