@@ -80,3 +80,5 @@ The following machine learning models are trained and evaluated:
   
 ## Results
 The results of the models' performance are compared, and the accuracy of each model is reported. The confusion matrix is used to visualize the classification results.
+## License
+This project is licensed under the Apache License 2.0.
